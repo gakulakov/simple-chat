@@ -1,0 +1,133 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  hr {
+    opacity: 0.3;
+  }
+
+  &__main {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__viewport {
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    display: flex;
+    min-width: 40vw;
+  }
+
+  &__messages-block {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  &__message-block {
+    min-height: 40vh;
+    padding-top: 20px;
+    max-height: 40vh;
+    overflow: auto;
+  }
+
+  &__message {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    p {
+      background: #706AFF;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+    }
+    span {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+
+  &__message-own {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+      background: #2ec321;
+      color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 4px;
+    }
+    span {
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+
+  &__manipulate {
+    display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    flex-wrap: wrap;
+    padding-block: 20px;
+
+    textarea {
+      resize: none;
+      outline: none;
+      border-radius: 8px;
+      max-height: 80px;
+      padding: 10px;
+      font-family: Calibri, sans-serif;
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+
+  &__send-btn {
+    margin-top: 10px;
+    background: #0077FE;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    p {
+      color: #ffff;
+    }
+
+    &:hover {
+      background: #706AFF;
+    }
+  }
+
+  &__users {
+    background: #f2f5f4;
+    padding: 20px 20px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  &__user {
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px  #c4c4c4;
+    font-weight: 500;
+    min-width: 150px;
+
+    margin-bottom: 10px;
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+}
+
