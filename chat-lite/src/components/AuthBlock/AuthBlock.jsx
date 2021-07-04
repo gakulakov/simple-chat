@@ -19,8 +19,8 @@ export const AuthBlock = ({onLogin}) => {
         }
 
         setIsLoading(true)
-        await axios.post('/rooms', obj)
-        onLogin(obj )
+        await axios.post('https://simple-chat-123.herokuapp.com/rooms', obj)
+        onLogin(obj)
     }
 
     return (
