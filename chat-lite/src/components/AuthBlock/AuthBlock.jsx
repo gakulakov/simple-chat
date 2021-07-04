@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import logo from "../../assets/Simple Chat.svg";
 
 
 export const AuthBlock = ({onLogin}) => {
@@ -26,6 +27,7 @@ export const AuthBlock = ({onLogin}) => {
     return (
         <div className="app">
             <div className={'app__auth'}>
+                <img src={logo} alt="logo"/>
                 <input onChange={(e) => setRoomId(e.target.value)} className={'app__input-auth'} type="text" placeholder={'Room ID'} value={roomId}/>
                 <input onChange={(e) => setUserName(e.target.value)} className={'app__input-auth'} type="text" placeholder={'Ваше имя'} value={userName}/>
                 <button className={'app__button'} disabled={isLoading} onClick={onEnter}>{isLoading ? 'Вход...' : 'Войти'}</button>

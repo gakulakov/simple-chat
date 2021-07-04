@@ -5,6 +5,7 @@ import socket from "./socket";
 import reducer from "./reducer";
 import {Chat} from "./components/Chat/Chat";
 import axios from "axios";
+import logo from './assets/Simple Chat.svg'
 
 
 function App() {

@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import './Chat.scss'
 import socket from "../../socket";
+import logo from "../../assets/Simple Chat.svg";
 
 
 export const Chat = ({users, messages, userName, roomId, onAddMessage}) => {
@@ -41,7 +42,9 @@ export const Chat = ({users, messages, userName, roomId, onAddMessage}) => {
     return (
         <div className={'chat'}>
             <div className={'chat__main'}>
+                <img src={logo} style={{maxWidth: '20%'}} alt="logo"/>
                 <div className={'chat__viewport'}>
+
                     <div className={'chat__users'}>
                         <b>Комната: {roomId}</b>
                         <hr/>
